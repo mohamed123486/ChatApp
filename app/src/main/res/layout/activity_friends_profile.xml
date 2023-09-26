@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+    tools:context=".Profile.Friends_Profile">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_height="match_parent"
+        >
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_baseline_person_24"
+        app:civ_shadow_color="@color/black"
+        android:layout_margin="50dp"
+        app:civ_shadow_radius="10dp"
+        android:id="@+id/friends_img"
+        app:civ_shadow="true"
+        ></com.mikhaellopez.circularimageview.CircularImageView>
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:padding="20sp"
+        android:text="name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/friends_name"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:padding="20sp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:text="email"
+        android:gravity="center"
+        android:id="@+id/friends_email"
+        android:layout_height="wrap_content"
+        ></TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:id="@+id/add"
+                android:layout_gravity="center"
+                android:text="Send Request"
+                ></androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/accept"
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:text="Accept Request"
+                ></androidx.appcompat.widget.AppCompatButton>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="30dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        >
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        app:civ_shadow="true"
+        android:fitsSystemWindows="true"
+        android:id="@+id/item_img"
+        app:civ_shadow_color="@color/white"
+        ></com.mikhaellopez.circularimageview.CircularImageView>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="groups"
+            android:id="@+id/item_name"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_height="match_parent"
+            ></TextView>
+    </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
